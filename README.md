@@ -1,48 +1,11 @@
-#1 step — Time to start!
-Looking forward to getting started? Let’s do it!
 
-This first exercise is not very complicated; it’s divided into two steps. The Git installation and GitHub account creation.
-
-a. GitHub account creation
-
-To create your account, you need to connect on the main GitHub page and to fill in the registration form.
-
-
-GitHub main page with registration form
-Nothing more! You are officially a new member of GitHub!
-
-b. Git installation
-
-Now you need to install Git tools on your computer. There are different Git software, but it’s better to install the basic one to start. We will use the command line to communicate with GitHub.
-
-Once you are more comfortable with the command line, you can download Git software with a user interface.
-
-For Ubuntu:
-First, update your packages:
-
-$ sudo apt update
-Next, install Git with apt-get:
-
-$ sudo apt-get install git
-Finally, verify that Git is installed correctly:
-
-$ git --version
-For MacOSX:
-First, download the latest Git for Mac installer.
-
-Next, follow instructions on your screen.
-
-Finally, open a terminal and verify that Git is installed correctly:
-
-$ git --version
-For Windows:
-First, download the latest Git for Windows installer.
-
-Next, follow instructions on your screen (you can leave the default options).
 
 Finally, open a terminal (example: powershell or git bash) and verify that Git is installed correctly:
 
+'''
 $ git --version
+'''
+
 For all users:
 One last step is needed to complete the installation correctly! You need to run in your terminal the following commands with your information to set a default username and email when you are going to save your work:
 
@@ -70,7 +33,7 @@ Submenu with “Your repositories” entry
 #3 step — A good cover
 It’s time to make your first modification to your repository. What do you think about creating a cover for it, a kind of welcome text?
 
-a. A local version of your project
+#### a. A local version of your project
 
 Your first mission is to get a copy of the repository on your computer. To do that, you need to “clone” the repository. On the repository page, you need to get the “HTTPS” address.
 
@@ -88,7 +51,7 @@ Now, your repository is on your computer. You need to move in it with:
 $ cd [NAME OF REPOSITORY]
 Note: When you clone, Git will create a repository on your computer. If you want, you can access your project with the computer user interface.
 
-b. Repository edition
+#### b. Repository edition
 
 Now you can create a file named “README.md” in your folder (through the terminal or user interface on your computer). I’m not giving you any more details about this step, nothing in particular. Open your folder and add a file as if it were a standard folder.
 
