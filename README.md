@@ -2,16 +2,14 @@
 
 Finally, open a terminal (example: powershell or git bash) and verify that Git is installed correctly:
 
-'''
-$ git --version
-'''
 
-For all users:
-One last step is needed to complete the installation correctly! You need to run in your terminal the following commands with your information to set a default username and email when you are going to save your work:
+$ git --version 
+
 
 $ git config --global user.name "Gaël Thomas"
 $ git config --global user.email "example@mail.com"
-#2 step — Your first GitHub project!
+
+first GitHub project:
 Now that you’re ready, you can return to the main GitHub page and click on the “+” icon in the menu bar.
 
 
@@ -22,7 +20,6 @@ Once you click on this button, a new menu appears with a “New repository” en
 Submenu with “New repository” entry
 The repository creation page will appear. Choose a cool name for your first repository and put a small description before clicking on the “Create repository” button.
 
-Note: In the context of this article, please don’t tick “Initialize this repository with a README”. We will create a “README” file later!
 
 
 Repository creation menu
@@ -30,10 +27,8 @@ Well done! Your first GitHub repository is created. If you want to see all your 
 
 
 Submenu with “Your repositories” entry
-#3 step — A good cover
-It’s time to make your first modification to your repository. What do you think about creating a cover for it, a kind of welcome text?
 
-#### a. A local version of your project
+A local version of your project:
 
 Your first mission is to get a copy of the repository on your computer. To do that, you need to “clone” the repository. On the repository page, you need to get the “HTTPS” address.
 
@@ -41,24 +36,33 @@ Your first mission is to get a copy of the repository on your computer. To do th
 Repository page with “HTTPS” address
 Once you had the address of the repositories, you need to use your terminal (through shell commands) to move in the place where you want to put the directory copy (for example you can move in your “Documents” folder). When you are ready, you can enter:
 
+$ cd [NAME OF REPOSITORY]
+
 $ git clone [HTTPS ADDRESS]
+
 This command will make a local copy of the repository hosted at the given address.
 
 
-Output message of “git clone” command
-Now, your repository is on your computer. You need to move in it with:
-
-$ cd [NAME OF REPOSITORY]
-Note: When you clone, Git will create a repository on your computer. If you want, you can access your project with the computer user interface.
-
-#### b. Repository edition
+##### Repository edition:
 
 Now you can create a file named “README.md” in your folder (through the terminal or user interface on your computer). I’m not giving you any more details about this step, nothing in particular. Open your folder and add a file as if it were a standard folder.
 
 If you want to do something cool, copy and paste this template in your “README.md” file. You can replace information between the hooks to personalize the output.
 
+1. Open your terminal or command prompt.
 
-c. Let’s share our work!
+2. Navigate to the Git repository where you want to create the `README.md` file. You can use the `cd` command to change directories. For example, if your repository is located on your desktop, you might use:
+
+bash
+cd ~/Desktop/repository-name
+
+
+3. Create the `README.md` file using any text editor or terminal command. For example, you can use the `touch` command to create an empty file:
+
+bash
+touch README.md
+
+
 
 Now that you have modified your project, you need to save it. This process is called committing.
 
@@ -68,33 +72,50 @@ When you want to save your work, four steps are required. These steps are called
 
 Note: All the following steps must be performed within your project.
 
-“status”: The first thing you need to do once your work is to check the files you have modified. To do this, you can type the following command to make a list of changes appear:
+1. **status**: The first thing you need to do once your work is to check the files you have modified. To do this, you can type the following command to make a list of changes appear:
 $ git status
 
-“git status” output in our project
-“add”: With the help of the change list, you can add all files you want to upload with the following command:
+
+2. **add**: With the help of the change list, you can add all files you want to upload with the following command:
+
 $ git add [FILENAME] [FILENAME] [...]
+
 In our case, we are going to add “README.md” because we want to save this file.
 
 $ git add README.md
+
 Note: If you type again “git status”, the “README.md” will appear now in green. This means that we have added the file correctly.
 
-“commit”: Now that we have added the files of our choice, we need to write a message to explain what we have done. This message may be useful later if we want to check the change history. Here is an example of what we can put in our case.
+3. **commit**: Now that we have added the files of our choice, we need to write a message to explain what we have done. This message may be useful later if we want to check the change history. Here is an example of what we can put in our case.
+
 $ git commit -m "Added README.md with good description in it."
-“push”: You’re there, you can now put your work online! If you type the following command, all your work will be put online and visible directly on the repository page.
+
+4. **push**: You’re there, you can now put your work online! If you type the following command, all your work will be put online and visible directly on the repository page.
+
 $ git push origin master
-You did it! If you come back on your repository page on GitHub, you are going to your “README.md” file with a beautiful preview of it.
 
 
-Repository page with “README.md” file
-Useful commands for Git
-You are still missing some essential commands as a beginner with Git. Here is a list that will be useful to you during your project.
 
-Display the history of commits (all modifications made on the project).
+
+### Useful commands for Git:
+
+1. Display the history of commits (all modifications made on the project).
+``` 
 $ git log
-Revert back all your changes since the last commit.
-$ git checkout .
-Revert all changes on a specific file since the last commit.
+
+```
+2. Revert back all your changes since the last commit.
+```
+$ git checkout 
+
+```
+3. Revert all changes on a specific file since the last commit.
+```
 $ git checkout [FILENAME]
-Display the last changes on a file since the last commit.
+
+```
+4. Display the last changes on a file since the last commit.
+```
 $ git diff [FILENAME]
+
+```
