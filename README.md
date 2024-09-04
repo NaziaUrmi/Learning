@@ -6,10 +6,10 @@ Finally, open a terminal (example: powershell or git bash) and verify that Git i
 
 $ git --version 
 
-```
-
 $ git config --global user.name "Gaël Thomas"
 $ git config --global user.email "example@mail.com"
+
+```
 
 ##### GitHub project:
 Now that you’re ready, you can return to the main GitHub page and click on the “+” icon in the menu bar.
