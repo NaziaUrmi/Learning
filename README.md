@@ -2,10 +2,11 @@
 
 Finally, open a terminal (example: powershell or git bash) and verify that Git is installed correctly:
 
+```
 
 $ git --version 
 
-
+```
 $ git config --global user.name "Gaël Thomas"
 $ git config --global user.email "example@mail.com"
 
@@ -35,10 +36,13 @@ Your first mission is to get a copy of the repository on your computer. To do th
 
 Repository page with “HTTPS” address
 Once you had the address of the repositories, you need to use your terminal (through shell commands) to move in the place where you want to put the directory copy (for example you can move in your “Documents” folder). When you are ready, you can enter:
+```
 
 $ cd [NAME OF REPOSITORY]
 
 $ git clone [HTTPS ADDRESS]
+
+```
 
 This command will make a local copy of the repository hosted at the given address.
 
@@ -53,14 +57,17 @@ If you want to do something cool, copy and paste this template in your “README
 
 2. Navigate to the Git repository where you want to create the `README.md` file. You can use the `cd` command to change directories. For example, if your repository is located on your desktop, you might use:
 
-bash
+```
 cd ~/Desktop/repository-name
+
+```
 
 
 3. Create the `README.md` file using any text editor or terminal command. For example, you can use the `touch` command to create an empty file:
 
-bash
+```
 touch README.md
+```
 
 
 
@@ -73,28 +80,39 @@ When you want to save your work, four steps are required. These steps are called
 Note: All the following steps must be performed within your project.
 
 1. **status**: The first thing you need to do once your work is to check the files you have modified. To do this, you can type the following command to make a list of changes appear:
+
+```
 $ git status
 
+```
 
 2. **add**: With the help of the change list, you can add all files you want to upload with the following command:
-
+```
 $ git add [FILENAME] [FILENAME] [...]
 
-In our case, we are going to add “README.md” because we want to save this file.
+```
 
+In our case, we are going to add “README.md” because we want to save this file.
+```
 $ git add README.md
+
+```
 
 Note: If you type again “git status”, the “README.md” will appear now in green. This means that we have added the file correctly.
 
 3. **commit**: Now that we have added the files of our choice, we need to write a message to explain what we have done. This message may be useful later if we want to check the change history. Here is an example of what we can put in our case.
 
+```
 $ git commit -m "Added README.md with good description in it."
+
+```
 
 4. **push**: You’re there, you can now put your work online! If you type the following command, all your work will be put online and visible directly on the repository page.
 
+``` 
 $ git push origin master
 
-
+```
 
 
 ### Useful commands for Git:
