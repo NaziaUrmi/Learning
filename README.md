@@ -7,10 +7,11 @@ Finally, open a terminal (example: powershell or git bash) and verify that Git i
 $ git --version 
 
 ```
+
 $ git config --global user.name "Gaël Thomas"
 $ git config --global user.email "example@mail.com"
 
-first GitHub project:
+##### GitHub project:
 Now that you’re ready, you can return to the main GitHub page and click on the “+” icon in the menu bar.
 
 
@@ -22,14 +23,12 @@ Submenu with “New repository” entry
 The repository creation page will appear. Choose a cool name for your first repository and put a small description before clicking on the “Create repository” button.
 
 
-
-Repository creation menu
-Well done! Your first GitHub repository is created. If you want to see all your repositories, you need to click on your profile picture in the menu bar then on “Your repositories”.
+Your first GitHub repository is created. If you want to see all your repositories, you need to click on your profile picture in the menu bar then on “Your repositories”.
 
 
 Submenu with “Your repositories” entry
 
-A local version of your project:
+##### A local version of your project:
 
 Your first mission is to get a copy of the repository on your computer. To do that, you need to “clone” the repository. On the repository page, you need to get the “HTTPS” address.
 
@@ -47,7 +46,7 @@ $ git clone [HTTPS ADDRESS]
 This command will make a local copy of the repository hosted at the given address.
 
 
-##### Repository edition:
+##### Repository edition (Create):
 
 Now you can create a file named “README.md” in your folder (through the terminal or user interface on your computer). I’m not giving you any more details about this step, nothing in particular. Open your folder and add a file as if it were a standard folder.
 
@@ -69,9 +68,9 @@ cd ~/Desktop/repository-name
 touch README.md
 ```
 
+##### Repository edition (modification save):
 
-
-Now that you have modified your project, you need to save it. This process is called committing.
+Now that you have modified your project, you need to save it. This process is called **committing**.
 
 To do this, get back to your terminal. If you have closed it, go back in your folder.
 
@@ -110,6 +109,8 @@ $ git commit -m "Added README.md with good description in it."
 4. **push**: You’re there, you can now put your work online! If you type the following command, all your work will be put online and visible directly on the repository page.
 
 ``` 
+$ git branch -M main
+
 $ git push origin master
 
 ```
